@@ -1,17 +1,22 @@
 import React from 'react';
-import {useState} from 'react';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import UseStateMaster from './components/useState/useStateMaster'; 
+import UseStateBoxExample from './components/useState/useStateBoxHover'; 
+import Nav from './components/useState/nav/nav'
 
-const App= (props)=>  {
 
-  const [hover, setHover] = useState(false);
-  
+const App = (props)=>  {
 
-  return (
- 
-    <div style={{background:'red', width:'300px', height:'200px'}}
-      onMouseEnter={() => setHover(true) }
-      onMouseLeave={() => setHover(false)}
-      onChange={console.log(hover)}/>
+  return (    
+
+       <Router>
+         {/* <Nav/> */}
+          <Switch>
+            <Route exact path="/" component={Nav} />
+            <Route exact path="/useState" component={UseStateMaster}/>
+            <Route path="/BoxExample" component={UseStateBoxExample}/>
+          </Switch>
+         </Router>
      )
 }
 
