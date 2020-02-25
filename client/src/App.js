@@ -13,6 +13,7 @@ const App = (props)=>  {
          {/* <Nav/> */}
           <Switch>
             <Route exact path="/" component={Nav} />
+            <Route exact path="/about" component={UseStateMaster}/>
             <Route exact path="/useState" component={UseStateMaster}/>
             <Route path="/BoxExample" component={UseStateBoxExample}/>
           </Switch>
