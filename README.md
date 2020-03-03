@@ -15,7 +15,7 @@ React Hooks. Further I take the time to explain what is going on in the code.
 
 
 ## Site Demo: 
-To comming soon 
+Comming soon 
 
 
 ## Link to Live Version: 
