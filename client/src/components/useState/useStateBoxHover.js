@@ -4,7 +4,9 @@ import {useState} from 'react';
 const UseStateBoxExample= (props)=>  {
 
   const [hover, setHover] = useState(false);
-  
+  let val = hover.toString(); 
+
+ 
 
   return (
  <div>
@@ -12,6 +14,7 @@ const UseStateBoxExample= (props)=>  {
       onMouseEnter={() => setHover(true) }
       onMouseLeave={() => setHover(false)}
       onChange={console.log(hover)}/>
+
      
 <h3>
       Hover over the box!
@@ -19,6 +22,7 @@ const UseStateBoxExample= (props)=>  {
   <h5>
       Check The console To Track Changes in State!
   </h5>
+  <p>State of hover: {val} </p>
   </div>   )
 }
 
