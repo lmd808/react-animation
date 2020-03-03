@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
+import {Link} from 'react-router-dom'
 
 const UseStateBoxExample= (props)=>  {
 
@@ -37,16 +38,16 @@ const UseStateBoxExample= (props)=>  {
          <p>
            Traditionally state would be declared in a class component by accessing the state component and adding new keys to it. However with use state you declare a state variable like the following: 
            <br/> 
-           <span >const [hover, setHover] = useState(false);</span>
+           <div style={{textAlign: 'center'}} >const [hover, setHover] = useState(false);</div>
            <br/>
            Here we create our state variable (hover), a call back function to set the value of hover thought the component (setHover) and set it the useState hook. The usestate hook takes a single parameter- the initial state. 
-           This state can be be of any data type. useState does NOT need to be an object, but it CAN be an object.
-           
-               
-
+           This state can be be of any data type. useState does NOT need to be an object, but it could be could be. In this example use state's initial value is 'false' a boolean value.            
 
            
          </p>
+         <Link to="/useState">UseState Examples</Link>
+         <br/>
+         <Link to="/">Home</Link>
 
 
 
