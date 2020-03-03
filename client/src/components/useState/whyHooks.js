@@ -17,9 +17,9 @@ function WhyHooks (){
                        <p>
                         If you're like me then you probably learned how to build react application through class components. 
                         However, If you're also like me then you've 100% run into the same issues with react class components what I have. 
-                        The major issues being: grabing state from nested components (yikes) and monitoring state throughout hte application (largely due to the initial problem).
+                        The major issues being: grabing state from nested components (yikes) and monitoring state throughout the application (largely due to the initial problem).
                         In addition, class components result in a ton of repeat code, resulting in a large code base. 
-                        It's not to say that programmers don't <em>love</em>> writing the same thing over and over again, but we would like to avoid that. 
+                        It's not to say that programmers don't <em>love</em> writing the same thing over and over again, but we would like to avoid that. 
                         Further, React pre hooks had concepts that were slowly begining to grow to unmanagable proportions (a bad thing for any library or framework). 
                         <strong>These common problems are what brought about hooks. </strong>
                        </p>
