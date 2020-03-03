@@ -4,6 +4,13 @@
 Hooks simplify the building process, but how exactly do they work? I decided to build a application that stores my mini experiments with 
 React Hooks. Further I take the time to explain what is going on in the code.  
 
+## How to use locally: 
+* Clone this repo to your computer
+* In the project directory, run `$npm install`
+* Edit `PORT` configuration if necessary/desired 
+* Run `npm start` or `node app` to start your server and use this project on your own
+
+
 ## Technologies: 
 * [Javascript](https://www.javascript.com/) - The scripting language used to manipulate the DOM. 
 * [Heroku](https://www.heroku.com/)- Cloud platform which builds databases and websites deployed online. 
