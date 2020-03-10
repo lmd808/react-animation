@@ -26,7 +26,7 @@ function Footer({ children }) {
             <div style={phantom} />
             <div style={style}>
                 { children }
-                <Link to="/">React Hooks</Link>  
+                <Link to="/">React Hooks</Link>  || <Link to="/about">Why Hooks?</Link> 
             </div>
         </div>
     )
