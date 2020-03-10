@@ -40,7 +40,7 @@ function WhyHooks (){
                        <h2>How Did We Get Here:</h2>
                        <hr/>
                        <p>To understand Hooks we must understand Javascript. Javascript is a unique langage in that it can mimic the properties of 
-                           an class bassed object oriented programming language such as Java, while retaining having the flexibility of not being an classs based object oriented programming langage. Weird right? </p>
+                           an class bassed programming language such as Java, while retaining having the flexibility of not being an classs based langage. Weird right? </p>
                         <p>It is absolutely weird, but there inlies it's power. Javascript, arguably, offers more flexibility than any other programming language. It is so flexible that a full stack application 
                             can be built using Javascript alone. That is extremely important for a few reasons: 
                         </p>
