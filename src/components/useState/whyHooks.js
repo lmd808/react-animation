@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './nav/navBar'
 import Footer from './nav/footer'
+import CardContainer from './nav/cardContainer'
 
 function WhyHooks (){
     return(
@@ -65,6 +66,7 @@ function WhyHooks (){
                 <div className="row">
                     <div className="col">
                        <h2>Examples:</h2>
+                       <CardContainer/>
                    </div>  
                 </div>
            </div>

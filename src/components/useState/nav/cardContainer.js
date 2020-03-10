@@ -29,7 +29,7 @@ function CardContainer (){
                 <div className="card" style={{width: '18rem',  textAlign: 'center'}}>
                     <img className="card-img-top" src={hooksImage} alt="Card  cap"/>
                 <div className="card-body">
-                    <p className="card-text"><Link to='/'>UseMemo Hooks Examples (comming Soon)</ Link></p>
+                    <p className="card-text"><Link to='/'>UseMemo Hooks: In development</ Link></p>
                  </div>
                  </div>         
             </div>    
