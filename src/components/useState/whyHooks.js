@@ -17,19 +17,19 @@ function WhyHooks (){
                        <p>
                         If you're like me then you probably learned how to build react application through class components. 
                         However, If you're also like me then you've 100% run into the same issues with react class components what I have. 
-                        The major issues being: grabing state from nested components (yikes) and monitoring state throughout the application (largely due to the initial problem).
+                        The major issues being: grabing state from nested components (yikes) and monitoring state throughout the application. The latetter issue being largely due to the former problem.
                         In addition, class components result in a ton of repeat code, resulting in a large code base. 
-                        It's not to say that programmers don't <em>love</em> writing the same thing over and over again, but we would like to avoid that. 
+                        It's not to say that programmers don't <em>love</em> writing the same thing over and over again... but we would like to avoid that! 
                         Further, React pre hooks had concepts that were slowly begining to grow to unmanagable proportions (a bad thing for any library or framework). 
                         <strong>These common problems are what brought about hooks. </strong>
                        </p>
 
                        <p>
-                           So why are hooks so great? Do they solve these problems? Hooks are great because they solve almost all of the above issues. 
-                           Let's look at how we got here. 
+                           So do hooks solve these problems? Why are hooks so great? 
                        </p>
+
                        <p>
-                           
+                           Yes! Hooks solve all these problem and then some. Let's look at how we got here. 
                        </p>
                    </div>
                </div>  
@@ -38,14 +38,14 @@ function WhyHooks (){
                        <h2>How Did We Get Here:</h2>
                        <hr/>
                        <p>To understand Hooks we must understand Javascript. Javascript is a unique langage in that it can mimic the properties of 
-                           an object orriented programming language such as Java, while remaining having the flexibility of not being an object orriented programming langage. Weird right? </p>
-                        <p>It is absolutely weird, but there inlies it's power. Javascript, arguably, offers more flexibility than any other programming language. It is so flexible that an entire full stack application 
+                           an class bassed object oriented programming language such as Java, while retaining having the flexibility of not being an classs based object oriented programming langage. Weird right? </p>
+                        <p>It is absolutely weird, but there inlies it's power. Javascript, arguably, offers more flexibility than any other programming language. It is so flexible that a full stack application 
                             can be built using Javascript alone. That is extremely important for a few reasons: 
                         </p>
                         <ol>
                             <li>Developers can use one langage throughout an entire stack (100% speeds up dev time)</li>
                             <li>Flexibility of Javascript allows for easy implementation of new features </li>
-                            <li>Massive community of users, tons of documentation, tons of Growth</li>
+                            <li>Massive community of users, tons of documentation, tons of growth</li>
                         </ol>
                         <p>
                             The third point on this list is the most important and largely why React hooks came about. With React's concepts begining to grow out of managable proportions, one brave github user

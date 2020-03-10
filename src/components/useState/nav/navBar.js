@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function NavBar (){
 return(
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">React Hooks: </a>
+  <Link to="/" class="navbar-brand">React Hooks: </Link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,7 +21,7 @@ return(
       <Link to='/useState'>UseState</Link>
       </li>
       <li class="nav-item">
-      <Link to='/'>Use Context</Link>
+      <Link to='/useContext'>Use Context</Link>
       </li>
     </ul>
   </div>
