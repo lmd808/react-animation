@@ -16,18 +16,23 @@ const UseContextMaster = ()=>  {
                 <h1 className="display-4" style={{textAlign:"center"}}>Use Context</h1>
                 <p className="lead" style={{textAlign:"center"}}>Use Context Master List of Activities </p>                      
       </div>
-
-    <ol>
-      <li>
-        <Link to="/userContext">User Context</Link>
-      </li>
-      <li>
-        <Link to="/protectingRoutes">Protecting routes</Link>
-      </li>
-      <li>
-        <Link to="/ProtectingFunctionality">Protecting functionality</Link>
-      </li>
-    </ol>
+      
+      <div className= 'container'>
+      <div className="row">
+        <div className="col-sm">
+          <div className="card" style={{width: '100%'}}>
+            <div className="card-header">
+            Use Context Examples
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item"><Link to="/userContext">User Context</Link></li>
+              <li className="list-group-item"> <Link to="/protectingRoutes">Protecting routes</Link></li>
+              <li className="list-group-item"><Link to="/ProtectingFunctionality">Protecting functionality</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>   
     <Footer/>
   </div>
   )
