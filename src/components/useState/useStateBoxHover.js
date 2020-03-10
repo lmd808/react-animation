@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import {Link} from 'react-router-dom'
+import Footer from './nav/footer'
+
 
 const UseStateBoxExample= (props)=>  {
 
@@ -54,6 +56,7 @@ const UseStateBoxExample= (props)=>  {
 
        </div>
      </div>
+     <Footer/>
    </div>
       )
 }

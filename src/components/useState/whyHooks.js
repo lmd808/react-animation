@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './nav/navBar'
+import Footer from './nav/footer'
 
 function WhyHooks (){
     return(
@@ -67,6 +68,7 @@ function WhyHooks (){
                    </div>  
                 </div>
            </div>
+           <Footer/>
         </div>
 
     )

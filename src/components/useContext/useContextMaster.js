@@ -3,6 +3,7 @@ import {
   Link
 } from "react-router-dom";
 import NavBar from '../useState/nav/navBar'
+import Footer from '../useState/nav/footer'
 
 
 const UseContextMaster = ()=>  { 
@@ -27,6 +28,7 @@ const UseContextMaster = ()=>  {
         <Link to="/ProtectingFunctionality">Protecting functionality</Link>
       </li>
     </ol>
+    <Footer/>
   </div>
   )
      

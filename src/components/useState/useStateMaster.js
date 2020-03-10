@@ -3,6 +3,7 @@ import {
   Link
 } from "react-router-dom";
 import NavBar from './nav/navBar'
+import Footer from './nav/footer'
 
 
 const UseStateMaster = ()=>  { 
@@ -27,6 +28,7 @@ const UseStateMaster = ()=>  {
         <Link to="/register">Register Step Form</Link>
       </li>
     </ol>
+    <Footer/>
   </div>
   )
      
