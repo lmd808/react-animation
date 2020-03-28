@@ -1,9 +1,36 @@
 import React from 'react';
 import { useState } from 'react';
-import DynamicInputs from './useStateDynamicInput';
+//import taskInputs from './useStateDynamicInput';
 
 const useStateDynamicForm = () => {
-	const [ taskState, setTaskState ] = useState([ { task: '', dueDate: '' } ]);
+	const [ userState, setUserState ] = useState({
+		user: '',
+		bio: ''
+	});
+
+	const handleUserChange = (e) =>
+		setUserState({
+			...userState,
+			[e.target.name]: [ e.target.value ]
+		});
+
+	const blankTask = { task: '', dueDate: '' };
+	const [ taskState, setTaskState ] = useState([ { ...blankTask } ]);
+
+	const addTask = () => {
+		setTaskState([ ...taskState, { ...blankTask } ]);
+	};
+
+	// const removeTask = ()=>{
+
+	// }
+
+	const handleTaskChange = (e) => {
+		const updatedTask = [ ...taskState ];
+		console.log(updatedTask);
+		updatedTask[e.target.dataset.idx][e.target.className] = e.target.value;
+		setTaskState(updatedTask);
+	};
 
 	return (
 		<div className="container justify-content-center">
@@ -18,16 +45,25 @@ const useStateDynamicForm = () => {
 					<form>
 						<div className="form-group">
 							<label for="user">User</label>
-							<input type="text" className="form-control" name="user" id="user" />
+							<input
+								type="text"
+								className="form-control"
+								name="user"
+								id="user"
+								onChange={handleUserChange}
+							/>
 						</div>
 						<div className="form-group">
 							<label for="bio">Bio</label>
-							<input type="text" className="form-control" name="bio" id="bio" />
+							<input
+								type="text"
+								className="form-control"
+								name="bio"
+								id="bio"
+								onChange={handleUserChange}
+							/>
 						</div>
 
-						<div class="form-group">
-							<input type="button" className="btn btn-primary" value="Add New task" />
-						</div>
 						{/* task mapping */}
 						{taskState.map((val, idx) => {
 							const taskId = `task-${idx}`;
@@ -42,7 +78,9 @@ const useStateDynamicForm = () => {
 											name={taskId}
 											data-idx={idx}
 											id={taskId}
-											className="task form-control "
+											className="task"
+											value={taskState[idx].task}
+											onChange={handleTaskChange}
 										/>
 									</div>
 									<label for={dateId}>Due Date</label>
@@ -51,15 +89,20 @@ const useStateDynamicForm = () => {
 										name={dateId}
 										data-idx={idx}
 										id={dateId}
-										className="dueDate form-control"
+										className="dueDate"
+										value={taskState[idx].dueDate}
+										onChange={handleTaskChange}
 									/>
 								</div>
 							);
 						})}
 
 						{/* end taks mapping  */}
+						<div class="form-group">
+							<input type="button" className="btn btn-primary" value="Add New task" onClick={addTask} />
+						</div>
 						<div className="form-group">
-							<input type="submit" className="btn btn-primary" value="Submit" />
+							<input type="submit" className="btn btn-primary" value="Stash My list" />
 						</div>
 						{/* We're going to add a task and due date*/}
 					</form>
